@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <StartupObject>TraderSys.SimpleStockTickerServer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

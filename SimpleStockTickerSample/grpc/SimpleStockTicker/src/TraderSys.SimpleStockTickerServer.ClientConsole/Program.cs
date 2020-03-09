@@ -17,7 +17,7 @@ namespace TraderSys.SimpleStockTickerServer.ClientConsole
             var client = new SimpleStockTicker.SimpleStockTickerClient(channel);
 
             var request = new SubscribeRequest();
-            request.Symbols.AddRange(args);
+            request.Symbols.AddRange(new[] { "Intel", "IBM", "GE" });
             using var stream = client.Subscribe(request);
 
             var tokenSource = new CancellationTokenSource();
